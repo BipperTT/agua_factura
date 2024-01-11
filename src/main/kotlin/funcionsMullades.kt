@@ -89,7 +89,6 @@ fun mostrarDetallesFactura(factura: Factura) {
     if (factura.descompteFamiliaNombrosaTotal > factura.descompteBoFinal){
         println("Descuento de familia numerosa: ${factura.descompteFamiliaNombrosaTotal}€")
     }else{ println("Descuento de Bono Social: ${factura.descompteBoFinal}€")}
-    println("Descuento: ${factura.descompteFamiliaNombrosaTotal + factura.descompteBoFinal}€")
     println("Costo del consumo: ${factura.costoConsumo}€")
     println("Total a pagar: ${factura.totalPagar}€")
 }
