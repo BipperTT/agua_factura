@@ -83,7 +83,7 @@ data class Factura(
 
 fun mostrarDetallesFactura(factura: Factura) {
     println("\nDetalles de la factura:")
-    println("Quota fija de mantenimiento: ${factura.quotaFixa}€")
+    println("Cuota fija de mantenimiento: ${factura.quotaFixa}€")
     println("Consumo de litros de agua: ${factura.consumoLitros} litres")
     println("Precio de consumo sin descuento: ${factura.costoConsumo + factura.descompteFamiliaNombrosaTotal + factura.descompteBoFinal}€")
     if (factura.descompteFamiliaNombrosaTotal > factura.descompteBoFinal){
