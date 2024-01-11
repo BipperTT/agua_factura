@@ -2,7 +2,7 @@
 fun solicitarConsumoAgua(): Int {
     var consumo: Int
     do {
-        println("Ingresar el consumo de litros de agua:")
+        println("${WHITE}Ingresar el consumo de litros de agua:${RESET}")
         val input = readLine()
         consumo = input?.toIntOrNull() ?: 0
     } while (consumo == 0)
@@ -12,7 +12,7 @@ fun solicitarConsumoAgua(): Int {
 fun solicitarFamiliaNombrosa(): Boolean {
     var respuesta: Int
     do {
-        println("¿Tiene familia numerosa? (1: Sí / 2: No):")
+        println("${WHITE}¿Tiene familia numerosa? (${GREEN}1: Sí${RESET} / ${RED}2: No${RESET}):${RESET}")
         respuesta = readLine()?.toIntOrNull() ?: 0
     } while (respuesta !in listOf(1, 2))
     return respuesta == 1
@@ -21,7 +21,7 @@ fun solicitarFamiliaNombrosa(): Boolean {
 fun solicitarBoSocial(): Boolean {
     var respuesta: Int
     do {
-        println("¿Tiene Bono Social? (1: Sí / 2: No):")
+        println("${WHITE}¿Tiene Bono Social? (${GREEN}1: Sí${RESET} / ${RED}2: No${RESET}):${RESET}")
         respuesta = readLine()?.toIntOrNull() ?: 0
     } while (respuesta !in listOf(1, 2))
     return respuesta == 1
@@ -30,7 +30,7 @@ fun solicitarBoSocial(): Boolean {
 fun solicitarNumeroMiembros(): Int {
     var miembros: Int
     do {
-        println("¿Cuántos miembros tiene la familia?")
+        println("${WHITE}¿Cuántos miembros tiene la familia?${RESET}")
         val input = readLine()
         miembros = input?.toIntOrNull() ?: 0
     } while (miembros == 0)
@@ -82,14 +82,16 @@ data class Factura(
 )
 
 fun mostrarDetallesFactura(factura: Factura) {
-    println("\nDetalles de la factura:")
-    println("Cuota fija de mantenimiento: ${factura.quotaFixa}€")
-    println("Consumo de litros de agua: ${factura.consumoLitros} litres")
-    println("Precio de consumo sin descuento: ${factura.costoConsumo + factura.descompteFamiliaNombrosaTotal + factura.descompteBoFinal}€")
-    if (factura.descompteFamiliaNombrosaTotal > factura.descompteBoFinal){
-        println("Descuento de familia numerosa: ${factura.descompteFamiliaNombrosaTotal}€")
-    }else{ println("Descuento de Bono Social: ${factura.descompteBoFinal}€")}
-    println("Costo del consumo: ${factura.costoConsumo}€")
-    println("Total a pagar: ${factura.totalPagar}€")
+    println("${WHITE_BOLD}\nDetalles de la factura:${RESET}")
+    println("${WHITE}Cuota fija de mantenimiento: ${factura.quotaFixa}€${RESET}")
+    println("${WHITE}Consumo de litros de agua: ${factura.consumoLitros} litres${RESET}")
+    println("${WHITE}Precio de consumo sin descuento: ${factura.costoConsumo + factura.descompteFamiliaNombrosaTotal + factura.descompteBoFinal}€${RESET}")
+    if (factura.descompteFamiliaNombrosaTotal > factura.descompteBoFinal) {
+        println("${YELLOW}Descuento de familia numerosa: ${factura.descompteFamiliaNombrosaTotal}€${RESET}")
+    } else {
+        println("${YELLOW}Descuento de Bono Social: ${factura.descompteBoFinal}€${RESET}")
+    }
+    println("${WHITE}Costo del consumo: ${factura.costoConsumo}€${RESET}")
+    println("${WHITE_BOLD}Total a pagar: ${factura.totalPagar}€${RESET}")
 }
 
