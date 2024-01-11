@@ -12,7 +12,7 @@ fun solicitarConsumoAgua(): Int {
 fun solicitarFamiliaNombrosa(): Boolean {
     var respuesta: Int
     do {
-        println("¿Tiene familia numerosa/monoparental? (1: Sí / 2: No):")
+        println("¿Tiene familia numerosa? (1: Sí / 2: No):")
         respuesta = readLine()?.toIntOrNull() ?: 0
     } while (respuesta !in listOf(1, 2))
     return respuesta == 1
@@ -87,8 +87,8 @@ fun mostrarDetallesFactura(factura: Factura) {
     println("Consumo de litros de agua: ${factura.consumoLitros} litres")
     println("Precio de consumo sin descuento: ${factura.costoConsumo + factura.descompteFamiliaNombrosaTotal + factura.descompteBoFinal}€")
     if (factura.descompteFamiliaNombrosaTotal > factura.descompteBoFinal){
-        println("Descuento por familia nombrosa/monoparental: ${factura.descompteFamiliaNombrosaTotal}€")
-    }else{ println("Descuento del Bono Social: ${factura.descompteBoFinal}€")}
+        println("Descuento de familia numerosa: ${factura.descompteFamiliaNombrosaTotal}€")
+    }else{ println("Descuento de Bono Social: ${factura.descompteBoFinal}€")}
     println("Descuento: ${factura.descompteFamiliaNombrosaTotal + factura.descompteBoFinal}€")
     println("Costo del consumo: ${factura.costoConsumo}€")
     println("Total a pagar: ${factura.totalPagar}€")
