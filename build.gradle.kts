@@ -11,15 +11,14 @@ repositories {
 
 dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
+    testImplementation(kotlin("test"))
 }
 
 tasks.test {
     useJUnitPlatform()
 }
+
 kotlin {
-<<<<<<< HEAD
     jvmToolchain(20)
-=======
-    jvmToolchain(17)
->>>>>>> d5d07c6 (3er Commit: añadir test)
 }
