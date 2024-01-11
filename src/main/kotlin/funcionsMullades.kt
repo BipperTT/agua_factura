@@ -1,4 +1,9 @@
-
+/**
+ * Solicita al usuario ingresar el consumo de litros de agua.
+ * @author BipperTT
+ * @since 10/01/2024
+ * @return El consumo de litros de agua ingresado por el usuario.
+ */
 fun solicitarConsumoAgua(): Int {
     var consumo: Int
     do {
@@ -9,6 +14,12 @@ fun solicitarConsumoAgua(): Int {
     return consumo
 }
 
+/**
+ * Solicita al usuario si tiene familia numerosa.
+ * @author BipperTT
+ * @since 10/01/2024
+ * @return True si el usuario tiene familia numerosa, False en caso contrario.
+*/
 fun solicitarFamiliaNombrosa(): Boolean {
     var respuesta: Int
     do {
@@ -18,6 +29,12 @@ fun solicitarFamiliaNombrosa(): Boolean {
     return respuesta == 1
 }
 
+/**
+ * Solicita al usuario si tiene Bono Social.
+ * @author BipperTT
+ * @since 10/01/2024
+ * @return True si el usuario tiene Bono Social, False en caso contrario.
+ */
 fun solicitarBoSocial(): Boolean {
     var respuesta: Int
     do {
@@ -27,6 +44,12 @@ fun solicitarBoSocial(): Boolean {
     return respuesta == 1
 }
 
+/**
+ * Solicita al usuario ingresar el número de miembros de la familia.
+ * @author BipperTT
+ * @since 10/01/2024
+ * @return El número de miembros de la familia ingresado por el usuario.
+ */
 fun solicitarNumeroMiembros(): Int {
     var miembros: Int
     do {
@@ -37,6 +60,16 @@ fun solicitarNumeroMiembros(): Int {
     return miembros
 }
 
+/**
+ * Calcula el costo de la factura en función de los parámetros dados.
+ * @author BipperTT
+ * @since 10/01/2024
+ * @param consumLitres Consumo de litros de agua.
+ * @param familiaNombrosa Indica si la familia es numerosa (1: Sí, 2: No).
+ * @param membresFamilia Número de miembros de la familia.
+ * @param boSocial Indica si tiene Bono Social (1: Sí, 2: No).
+ * @return Un objeto Factura con los detalles del costo.
+ */
 fun calcularCostoFactura(consumLitres: Int, familiaNombrosa: Int, membresFamilia: Int, boSocial: Int): Factura {
     val quotaFixaManteniment = 6.0
     val preuLitresMenor50 = 0.0
@@ -72,6 +105,17 @@ fun calcularCostoFactura(consumLitres: Int, familiaNombrosa: Int, membresFamilia
     return Factura(quotaFixa, consumLitres.toDouble(), descompteFamiliaNombrosaTotal, costConsum, totalPagar, descompteBoFinal)
 }
 
+/**
+ * Clase que representa una factura con varios detalles.
+ * @author BipperTT
+ * @since 10/01/2024
+ * @property quotaFixa Cuota fija de mantenimiento.
+ * @property consumoLitros Consumo de litros de agua.
+ * @property descompteFamiliaNombrosaTotal Descuento total por familia numerosa.
+ * @property costoConsumo Costo del consumo de agua.
+ * @property totalPagar Total a pagar, incluyendo descuentos y cuota fija.
+ * @property descompteBoFinal Descuento final por Bono Social.
+ */
 data class Factura(
     val quotaFixa: Double,
     val consumoLitros: Double,
@@ -81,6 +125,12 @@ data class Factura(
     val descompteBoFinal: Double
 )
 
+/**
+ * Muestra los detalles de la factura en la consola.
+ * @author BipperTT
+ * @since 10/01/2024
+ * @param factura La factura a mostrar.
+ */
 fun mostrarDetallesFactura(factura: Factura) {
     println("${WHITE_BOLD}\nDetalles de la factura:${RESET}")
     println("${WHITE}Cuota fija de mantenimiento: ${factura.quotaFixa}€${RESET}")
