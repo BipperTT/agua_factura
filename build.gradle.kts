@@ -20,5 +20,7 @@ tasks.test {
 }
 
 kotlin {
-    jvmToolchain(20)
+    jvmToolchain {
+        version = "17"
+    }
 }
