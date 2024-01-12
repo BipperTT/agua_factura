@@ -52,7 +52,7 @@ A continuación se puede apreciar una aplicación programada con el pseudocódig
 - [src/main/kotlin/funcionsMullades.kt](src/main/kotlin/funcionsMullades.kt): Archivo donde se encuentran las funciones modulares para el funcionamiento óptimo de la aplicación.
 - [src/main/kotlin/consoleColors.kt](src/main/kotlin/ConsoleColors.kt): Archivo donde se encuentran constantes para aplicar color a la consola. (Archivo obtenido gracias a raimonizard: https://github.com/raimonizard/kotlin)
 - [src/main/kotlin/utilities.kt](src/main/kotlin/Utilities.kt): Archivo donde hay diversas funciones modulares. (Archivo obtenido gracias a raimonizard: https://github.com/raimonizard/kotlin)
-- [src/test/kotlin/FunctionsKtTest.kt](src/test/kotlin/MainKtTest.kt): Se testea todas las funciones.
+- [src/test/kotlin/MainKtTest.kt](src/test/kotlin/MainKtTest.kt): Se testea todas las funciones.
 
 ## Ejecución
 
