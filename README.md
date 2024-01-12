@@ -64,11 +64,11 @@ A continuación se puede apreciar una aplicación programada con el pseudocódig
 <div style="text-align: center;">
     <h6 align= center>Se piden datos</h6>
     <p align= center style="display: inline-block; margin: 10px;">
-        <img src="https://github.com/BipperTT/agua_factura/assets/153605976/74829538-278c-4d4d-bcdc-69f5c35c6306" alt="Ejecucion donde pide los datos" height="258px" width="513">
+        <img src="https://github.com/BipperTT/agua_factura/assets/153605976/74829538-278c-4d4d-bcdc-69f5c35c6306" alt="Ejecucion donde pide los datos" height="258" width="513">
     </p>
     <h6 align= center>Se muestran los resultados</h6>
     <p align= center style="display: inline-block; margin: 10px; align: center;">
-        <img src="https://github.com/BipperTT/agua_factura/assets/153605976/f2ba4142-522a-4e54-b206-965c62d96f7f" alt="Enseña los resultados" height="258px" width="513">
+        <img src="https://github.com/BipperTT/agua_factura/assets/153605976/f2ba4142-522a-4e54-b206-965c62d96f7f" alt="Enseña los resultados" height="258" width="513">
     </p>
 </div>
 
