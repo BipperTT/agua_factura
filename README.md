@@ -1,7 +1,18 @@
 # Factura del agua
-<p align="center">
+<div align="center">
     <img src= https://github.com/BipperTT/agua_factura/assets/153605976/d995300b-c66b-4447-9649-6a1f39a8c108> 
-</p>
+</div>
+
+<div align="center">    
+    <img src= https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white>
+    <img src= https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white>
+</div>
+
+<div align="center">
+    <img src= https://img.shields.io/github/repo-size/BipperTT/agua_factura>
+    <img src= https://img.shields.io/github/commit-activity/t/BipperTT/agua_factura?color=green>
+    <img src= https://img.shields.io/github/last-commit/BipperTT/agua_factura/main?color=green>
+</div>
 
 ## Descripción de la aplicación
 
