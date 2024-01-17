@@ -51,8 +51,8 @@ A continuación se puede apreciar una aplicación programada con el pseudocódig
     │   └── kotlin
     │       ├── funcionsMullades.kt
     │       ├── Main.kt
-    │       ├── consoleColors.kt
-    │       └── utilities.kt
+    │       ├── ConsoleColors.kt
+    │       └── Utilities.kt
     └── test
         └── kotlin
             └── MainKtTest.kt
